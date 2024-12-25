@@ -12,6 +12,21 @@
 		content="Flutter and React Native software engineer with expertise in crafting high-quality mobile applications.">
 	<meta name="keywords" content="Flutter developer, React Native expert, mobile app engineer, telemedicine apps">
 	<meta name="author" content="Md. Khokanuzzaman">
+	<!-- Open Graph / Facebook / LinkedIn / etc. -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://khokanuzzman.github.io/" />
+	<meta property="og:title" content="Resume of Md. Khokanuzzaman" />
+	<meta property="og:description"
+		content="Flutter and React Native software engineer with expertise in crafting high-quality mobile applications, specializing in telemedicine." />
+	<meta property="og:image" content="https://khokanuzzman.github.io/assets/images/portfolio.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://khokanuzzman.github.io" />
+	<meta property="twitter:title" content="Resume of Md. Khokanuzzaman" />
+	<meta property="twitter:description"
+		content="Flutter and React Native software engineer with expertise in crafting high-quality mobile applications, specializing in telemedicine." />
+	<meta property="twitter:image" content="https://khokanuzzman.github.io/assets/images/portfolio.png" />
 	<link rel="shortcut icon" href="k.png">
 
 	<!-- Google Fonts -->
@@ -34,7 +49,57 @@
 				/* Same as fs-4 */
 			}
 		}
+
+		@media (max-width: 768px) {
+			.resume-header h2 {
+				font-size: 1.6rem;
+				letter-spacing: 0.2rem;
+			}
+
+			.resume-header ul li {
+				font-size: 0.8rem;
+			}
+		}
+
+		div#download-btn {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: #54B688;
+			width: 60px;
+			height: 60px;
+			border-radius: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			transition: transform 0.3s ease, background 0.3s ease;
+		}
+
+		div#download-btn:hover {
+			transform: scale(1.1);
+			background: #3d8b68;
+		}
+
+		.col.text-start>p {
+			padding-left: 1rem;
+		}
+
+		.resume-profile-image {
+			max-width: 145px !important;
+		}
 	</style>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X2XDK1K5NB"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1928074644821911"
+		crossorigin="anonymous"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-X2XDK1K5NB');
+	</script>
 	<!-- Google Tag Manager -->
 	<script>(function (w, d, s, l, i) {
 			w[l] = w[l] || []; w[l].push({
@@ -55,7 +120,6 @@
 	<div class="main-wrapper">
 		<div class="container px-3 px-lg-5">
 			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
-
 				<div class="resume-header">
 					<div class="row align-items-center">
 						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
@@ -64,10 +128,19 @@
 						</div><!--//resume-title-->
 						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
 							<ul class="list-unstyled mb-0">
-								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a
-										class="resume-link" href="tel:#">01679544628</a></li>
+								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i>
+									<a class="resume-link" href="tel:01679544628">+8801679544628</a>
+								</li>
+								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i>
+									<a class="resume-link" href="tel:01313086274">+8801313086274</a>
+								</li>
+								<!-- add whatsapp profile -->
+								<li class="mb-2"><i class="fab fa-whatsapp fa-fw fa-lg me-2"></i><a class="resume-link"
+										href="https://wa.me/01313086274">Khokanuzzaman</a></li>
 								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a
-										class="resume-link" href="mailto:#">Khokanuzzamankhokan@gmail.com</a></li>
+										class="resume-link"
+										href="mailto:Khokanuzzamankhokan@gmail.com">Khokanuzzamankhokan@gmail.com</a>
+								</li>
 								<li class="mb-2"><i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="resume-link"
 										href="#">www.khokanuzzaman.github.io</a></li>
 								<li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Dhaka,Bangladesh
@@ -75,25 +148,19 @@
 							</ul>
 						</div><!--//resume-contact-->
 					</div><!--//row-->
-
 				</div><!--//resume-header-->
 				<hr>
 				<div class="resume-intro py-3">
 					<div class="row align-items-center">
 						<div class="col-12 col-md-3 col-xl-2 text-center">
 							<img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto"
-								src="assets/images/khokan.jpeg" alt="image">
+								src="assets/images/khokan-profile-pic.png" alt="image">
 						</div>
 
 						<div class="col text-start">
-							<!-- <p class="mb-0">
-								Experienced software engineer with over 5+ years of expertise in crafting innovative
-								mobile and web applications. Demonstrates proficiency in both Flutter and React Native,
-								having successfully developed the Jotno mobile app for patients and contributed to the
-								creation of Jotno Expert for doctors. Adept at leveraging cutting-edge technologies to
-								enhance application performance and user experience.</p> -->
-							<p>Experienced software engineer with over 5+ years of expertise in developing innovative
-								mobile and web applications. Proficient in both Flutter and React Native, with a track
+							<p>Experienced software engineer with over 6+ years of expertise in developing innovative
+								mobile and web applications. Proficient in Native android, Flutter and React Native,
+								with a track
 								record of success including:</p>
 
 							<ul>
@@ -118,7 +185,25 @@
 					<div class="row">
 						<div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
 							<section class="work-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+								<h3 class="text-uppercase resume-section-heading mb-4">
+									Work Experiences (<span id="experience-duration"></span>)
+								</h3>
+								<script>
+									document.getElementById('experience-duration').innerText = calculateExperience('2018-08-15');
+
+									function calculateExperience(startDate) {
+										const start = new Date(startDate);
+										const now = new Date();
+										let years = now.getFullYear() - start.getFullYear();
+										let months = now.getMonth() - start.getMonth();
+										if (months < 0) {
+											years--;
+											months += 12;
+										}
+										return `${years} years ${months} months+`;
+									}
+								</script>
+								</h3>
 								<div class="item mb-3">
 									<div class="item-heading row align-items-center mb-2">
 										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Software Engineer -
@@ -128,11 +213,29 @@
 											class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
 											<b><a href="https://squarehealth.com.bd/">Square Health Ltd</a></b> | Jan
 											2023 - Present
+											(<span id="experience-duration-square-health"></span>)
+											<script>
+												document.getElementById('experience-duration-square-health').innerText = calculateExperience('2023-01-01');
+
+												function calculateExperience(startDate) {
+													const start = new Date(startDate);
+													const now = new Date();
+													let years = now.getFullYear() - start.getFullYear();
+													let months = now.getMonth() - start.getMonth();
+													if (months < 0) {
+														years--;
+														months += 12;
+													}
+													return `${years}yr ${months}m +`;
+												}
+											</script>
 										</div>
 
 									</div>
 									<div class="item-content">
-										<p>Square Health, a part of Square Group—one of the largest conglomerates in
+										<p><a target="_blank" href="https://squarehealth.com.bd/">Square Health</a>, a
+											part of <a target="_blank" href="https://squaregroup.com/">Square
+												Group</a>—one of the largest conglomerates in
 											Bangladesh—is a healthcare services aggregator focused on unifying
 											healthcare units on a single platform.</p>
 
@@ -158,7 +261,7 @@
 										<div
 											class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
 											<b><a href="https://squarehealth.com.bd/">Square Health Ltd</a></b> | 2019 -
-											Jan 2023
+											2023 (3yr 1m)
 										</div>
 
 									</div>
@@ -177,14 +280,6 @@
 										<li>Worked on optimizing application performance and stability across various
 											devices.</li>
 										</ul>
-										<!-- <ul class="resume-list">
-											<li>Lead member of jotno mobile team.</li>
-											<li>Developing mobile app for the company.</li>
-											<li>Taking part in business requirement analysis, and development.</li>
-											<li>Publish the app and manage the google play console.</li>
-											<li>Taking part in the hiring process.</li>
-											<li>working with React native, flutter, typescript, dart and API.</li>
-										</ul> -->
 									</div>
 								</div><!--//item-->
 								<div class="item mb-3">
@@ -192,11 +287,10 @@
 										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Web
 											Developer(Wordpress)</h4>
 										<div
-											class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-											<b>Bizpuzzles Pte Ltd</b> | 2017
-											- 2018
+											class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end d-flex flex-wrap">
+											<b><a href="https://www.bizpuzzles.com">Bizpuzzles Pte Ltd</a></b> |
+											<span class="ms-2">2017-2018 (1yr 3mos)</span>
 										</div>
-
 									</div>
 									<div class="item-content">
 										<p>Bizpuzzles is the go-to technological platform and partner for business
@@ -301,15 +395,18 @@
 				<hr>
 				<div class="resume-footer text-center">
 					<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-						<li class="list-inline-item mb-lg-0 me-3"><a class="https://github.com/khokanuzzman" href="#"><i
+						<li class="list-inline-item mb-lg-0 me-3"><a class="https://github.com/khokanuzzman"
+								href="https://github.com/khokanuzzman" target="_blank"><i
 									class="fab fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span
 									class="d-none d-lg-inline-block text-muted">github.com/khokanuzzman</span></a></li>
 						<li class="list-inline-item mb-lg-0 me-3"><a class="https://www.linkedin.com/in/khokanuzzaman/"
-								href="#"><i class="fab fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i><span
+								href="https://www.linkedin.com/in/khokanuzzaman/" target="_blank"><i
+									class="fab fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i><span
 									class="d-none d-lg-inline-block text-muted">linkedin.com/in/khokanuzzaman/</span></a>
 						</li>
 						<li class="list-inline-item mb-lg-0 me-lg-3"><a
-								class="https://stackoverflow.com/users/7706591/khokanuzzaman-khokan" href="#"><i
+								class="https://stackoverflow.com/users/7706591/khokanuzzaman-khokan"
+								href="https://stackoverflow.com/users/7706591/khokanuzzaman-khokan" target="_blank"><i
 									class="fab fa-twitter-square fa-2x me-2" data-fa-transform="down-4"></i><span
 									class="d-none d-lg-inline-block text-muted">@stackoverflow.com/khokanuzzaman</span></a>
 						</li>
@@ -319,9 +416,19 @@
 
 		</div><!--//container-->
 
+		<!-- Floating Download CV Button -->
+		<div class="download-btn" id="download-btn">
+			<i style="color: white;" class="fas fa-download font-size-xl"></i>
+		</div>
+
 	</div><!--//main-wrapper-->
 
-
+	<script>
+		document.getElementById('download-btn').addEventListener('click', function () {
+			window.location.href = './assets/doc/Resume_khokan.pdf'; // Replace with your CV file path
+		});
+	</script>
 </body>
+
 
 </html>
